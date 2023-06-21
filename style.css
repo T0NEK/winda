@@ -1,0 +1,307 @@
+    html
+    {
+        cursor: none;    
+    }
+    body
+    {
+        background-color: black;
+        color: mediumblue;
+        font-size: 24px;
+        font-weight: 700;
+        cursor: none;
+        --szerokosc_cyfra: 70px;
+        --szerokosc_panel_cyfry: 100px;
+        --font_cyfry: 45px;
+        --szerokosc_drzwi: 140px;  
+    }
+    #container
+	{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+        cursor: none;
+	}
+	#logo
+	{
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 15px;
+        cursor: none;
+	}
+    #napislogo
+    {
+	    display: block;
+        text-decoration: none;
+        cursor: none;
+    }
+    a
+    {
+        color: white;    
+    }
+    #wierszstatus
+    {
+        clear: both;
+    }
+    #zegar
+    {
+        float: left;
+        color: mediumblue;
+        min-width: 70%;
+		text-align: left;
+        cursor: none;
+    }
+    #status
+	{
+	    float: left;
+        color: mediumblue;
+		text-align: right;
+        cursor: none;
+	}
+    #pietra
+    {
+        clear: both;
+        cursor: none;
+    }
+	#wybranepietra1,
+    #wybranepietra2,
+    #wybranepietra3
+	{
+		float: left;
+		width: var(--szerokosc_panel_cyfry);
+		padding: 5px;
+        cursor: none;
+	}
+    .odstep
+    {
+		float: left;
+        width: var(--szerokosc_panel_cyfry);
+        min-height: 25px;
+        cursor: none;
+    }
+    .cyfra
+    {
+        display:block;
+        text-decoration: none;
+        float: left;
+        width: var(--szerokosc_cyfra);
+        min-height: var(--szerokosc_cyfra);
+        padding: 8px;
+        text-align: center;
+        font-size: var(--font_cyfry);
+        margin: 4px;
+        cursor: pointer;
+        border-radius: 35px;
+        padding-top: 12px;
+        padding-bottom: 4px;
+    }
+    .cyfra:active
+    {
+        padding-top: 16px;
+        padding-bottom: 0px;
+        border: 4px solid #ffcc33;
+        background-color: #ffcc33;
+    }
+    .cyfra_off
+    {
+        color: #ff9900;
+        border: 4px solid #ffcc33;
+    }
+    .cyfra_on
+    {
+        color: #33cc33;
+        border: 4px solid #66ff66;
+        padding-top: 16px;
+        padding-bottom: 0px;
+    }
+    .cyfra_dis
+    {
+        color: #646464;
+        border: 4px solid #444444;
+    }
+    #panel
+    {
+        float: left;
+        cursor: none;
+    }
+	#informacje
+	{
+		display: block;
+        border: 2px solid darkgrey;
+        border-radius: 5px;
+        padding: 5px;
+        height: 570px;
+        margin: 10px;
+        font-size: 18px;
+        cursor: none;
+        overflow-y: auto;
+        overflow-x: hidden;
+	}
+    #status2
+    {
+		display: block;
+        border: 2px solid darkgrey;
+        border-radius: 5px;
+        height: 30px;
+        margin: 10px;
+        font-size: 24px;
+        text-align: center;
+        cursor: none;
+        padding-left: 20px;
+    }
+    #status2 a
+    {
+        display: block;
+        float: left;
+        color: mediumblue;
+        text-decoration: none;
+        cursor: none;
+    }
+    .status2_mrugaj
+    {
+        display: block;
+        float: left;
+        color: mediumblue;
+        text-decoration: none;
+        animation: mrugaj 1s linear infinite;
+        cursor: none;
+    }
+    #status2 i
+    {
+        display: block;
+        float: left;
+        padding-top: 1px;
+    }
+    
+    @keyframes mrugaj
+    {
+        0% { color: mediumblue; }
+        50% { color: white; }
+        1000% { color: mediumblue; }
+    }
+    .grozby
+    {
+        color: red;
+        text-decoration: none;
+        padding-left:15px;
+        animation: mrugaj1 8s linear infinite;
+        cursor: none;
+    }
+    @keyframes mrugaj1
+    {
+        0% { color: red; }
+        50% { color: white; }
+        1000% { color: red; }
+    }
+	#przyciski
+	{
+		padding: 30px;
+        padding-top: 10px;
+        cursor: none;
+	}
+    #openclose,
+    #stoppomoc,
+    #startkasuj
+    {
+        float: both;
+    }
+    .przycisk
+    {
+        display:block;
+        float: left;
+        padding: 8px;
+        text-align: center;
+        font-size: var(--font_cyfry);
+        text-decoration: none;
+        margin: 5px;
+        cursor: pointer;
+        border-radius: 35px;
+        padding-top: 12px;
+        padding-bottom: 4px;
+    }
+    .icon-to-start,
+    .icon-to-end
+    {
+        display: block;
+        float: left;
+        padding-top: 12px;
+        padding-left: 18px;
+    }
+    .przyciskdrzwi
+    {
+    	width: var(--szerokosc_drzwi);
+        min-height: var(--szerokosc_cyfra);
+        color: violet;
+        border: 4px solid darkviolet;
+        font-size: 32px;
+    }
+    .przyciskdrzwi:active
+    {
+        padding-top: 16px;
+        padding-bottom: 0px;
+        background-color: darkviolet;
+    }
+    #przyciskstop
+	{
+		clear: both;
+        color: red;
+        border: 4px solid red;
+	}	
+	#przyciskpomoc
+	{
+		float: left;
+        color: green;
+        border: 4px solid green;
+	}	
+    .przyciskalarm
+    {
+    	width: var(--szerokosc_drzwi);
+        min-height: var(--szerokosc_cyfra);
+        font-size: 48px;
+        font-weight: 900;
+    }
+    #przyciskstop:active
+    {
+        padding-top: 16px;
+        padding-bottom: 0px;
+        color: black;
+        background-color: red;
+    }
+    #przyciskpomoc:active
+    {
+        padding-top: 16px;
+        padding-bottom: 0px;
+        color: black;
+        background-color: green;
+    }
+    .przycisksterowanie
+    {
+    	width: var(--szerokosc_drzwi);
+        min-height: var(--szerokosc_cyfra);
+        font-size: var(--font_cyfry);
+    }
+    .przycisksterowanie:active
+    {
+        padding-top: 16px;
+        padding-bottom: 0px;
+        border: 4px solid #ffcc33;
+        background-color: #ffcc33;
+    }
+    #przyciskidalej,
+    #przyciskikasuj
+	{
+		clear: both;
+    }
+    #przyciskiup,
+	#przyciskidown
+	{
+		float: left;
+    }
+	.icon-up-fat,
+    .icon-down-fat
+    {
+        display: block;
+        padding-top: 6px;
+    }
+    
+    
